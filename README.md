@@ -32,12 +32,18 @@ The build is minified and the filenames include the hashes.<br />
 ### Manual Environment Setup
 - Clone a forked version of the repository to your computer;  
 `git clone https://github.com/yourusername/openmrs-ocl-client.git`
-      
+
 - In the root directory of the project install all the dependencies;  
 `npm install`
 
+- In the `public` folder located in root directory of the project, create a configuration file named:  
+`env-config.js`
+
+- In the `env-config.js` file, add a line to define your OCL API host, for example:  
+`var OCL_API_HOST = "https://api.qa.openconceptlab.org";`
+
 ### Running the Docker Image
-- Build the Docker image using the provided Docker file in the root folder. 
+- Build the Docker image using the provided Docker file in the root folder.
 `docker-compose build`.
 
 - Run the docker image using docker-compose  
